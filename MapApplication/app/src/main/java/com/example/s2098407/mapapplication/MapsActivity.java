@@ -7,7 +7,6 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 
@@ -66,8 +65,23 @@ public class MapsActivity extends FragmentActivity {
     private void setUpMap() {
         mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(0, 0))
-                .title("Hello world")
+                .title("Portal That contains a killer beast")
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.porta)));
 
+        mMap.addMarker(new MarkerOptions()
+        .position(new LatLng(48.8567, 2.3508))
+        .title("Paris France")
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.eiffeltower)));
+
+        mMap.addMarker(new MarkerOptions()
+                .position(new LatLng(30.2500,-97.7500))
+                .title("Austin Texas")
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.frog)));
+
+        mMap.addMarker(new MarkerOptions()
+                .position(new LatLng(22.2783, 114.1747))
+                .title("Hong Kong China")
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.hongkong)));
 
     }
 
